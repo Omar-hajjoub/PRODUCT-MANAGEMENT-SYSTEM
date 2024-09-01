@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT MANAGEMENT SYSTEM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+ <section class="bg-slate-600 w-full ">
+    <div>
+        <!------- hedaire-->
+    <div class="text-center text-white font-bold text-2xl">
+        <h1 class="text-2xl">GRUDS</h1> 
+        <P>PRODUCT MANAGEMENT SYSTEM</P>
+    </div>
+
+
+    <!---- input----->
+
+    <div class="container flex flex-col justify-items-center items-center mx-auto p-9 h-full ">
+        <div class="w-full" >
+            <input class="w-full rounded-full text-center p-1" type="text" id="title" value="" placeholder="title">
+        </div><br>
+
+        <div class="w-full space-x-4 md:flex flex-row justify-center space-y-4 " >
+            <input  onkeyup="gettotal()" type="number" value="" id="pance" placeholder="pance" class="rounded-full text-center   ">
+            <input  onkeyup="gettotal()" type="number" value="" id="taxes" placeholder="taxes" class="rounded-full text-center  ">
+            <input  onkeyup="gettotal()" type="number" value="" id="ads" placeholder="ads" class="rounded-full text-center  ">
+            <input  onkeyup="gettotal()" type="number" value="" id="discount" placeholder="discount" class="rounded-full text-center  ">
+             <span id="total" class="bg-red-700 text-left text-white md:relative flex justify-center items-center w-full  ">Total: <span id="totlnum"></span> </span>
+
+        </div>
+        <div class="flex flex-col justify-items-center items-center p-9 w-full  rounded-full text-center">
+            <input class="w-full  rounded-full text-center p-1" type="text" name="" id="count" value="" placeholder="count"><br>
+            <input class="w-full  rounded-full text-center p-1" type="text" name="" id="caregory" value="" placeholder="caregory"><br>
+            <button class="w-full bg-neutral-900 text-3xl text-white shadow-2xl rounded-full hover:scale-105" id="create" >create</button><br>
+            <input class="w-full  rounded-full text-center p-1" type="search" name="" id="search" value="" placeholder="search"><br>
+            <div class="flex items-center justify-between px-9">
+                <button class="  bg-neutral-900 text-xl text-white shadow-2xl rounded-full p-2 mx-9 " id="btntitle">search By Title</button>
+                <button class=" bg-neutral-900 text-xl text-white shadow-2xl rounded-full  p-2 mx-9" id="btnCartegory"> serach By Cartegory</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!----------- tabel  ------------>
+    <div class="container w-full  py-5 px-9  ">
+
+<Table class="table-auto w-full  md:ml-20  lg:ml-0 bg-white       text-center  ">
+
+    <tr class="border-5" >
+        <th >id</th>
+        <th>title</th>
+        <th>pance</th>
+        <th>taxes</th>
+        <th>ads</th>
+        <th>discount</th>
+        <th>count</th>
+        <th>caregory</th>
+        <th>PLUS</th>
+        <th>Duliteqq</th>
+
+    </tr>
+
+    <div id="deletallo">
+
+    </div>
+   
+<tbody id="todby">
+   
+
+</tbody>
+
+ 
+</Table>
+
+</div>
+
+</div>
+</section>
+
+  
+    <script src="main.js"></script>
+</body>
+</html>
